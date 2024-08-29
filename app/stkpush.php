@@ -10,7 +10,7 @@ $BusinessShortCode = '174379';
 $timestamp = date('YmdHis');
 
 //ECRYPT Data to get PASSWORD
-$password = base64_encode($BusinessShortCode, $passKey, $timestamp);
+$password = base64_encode($BusinessShortCode); //$passKey, //$timestamp  );
 $phone = '254745880757';
 $money = '1';
 $transactionType = 'CustomerPayBillOnline';
